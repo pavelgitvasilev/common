@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "moneymanzalog",
+  "private_key_id": "d7de42f0f79d15a274319600caf43f642d46f7e9",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDNo7IxtcG2rdWP\n19QHvlMYrc46YRm/1XJdfQ/yHh1E7l6Zypz1c9K9HGBFdhnELxIoJTSz6xQm3EeH\n22B4B+wv1g+uQN1gfNourrtkMXxMDTTs+TXHVXUg4PK1k6LPdBpJ0tt/gnvpLZsr\nhut3KRmCsfi88UvH/WsJF2qUWFRjte4q6NFEH+GMCv4FIIpC1t7ANpvGadharc7O\nfKHGgYGRt8ffw7/jDlapxm8cyQ2U3JGiDMU02BtWncsAqgWG+/GSglojSd33lQXr\ng/ug+TZvV8k/fRn+v2ik1XL4iO+xrCE2cHHDQdYARCE/QLoAJqY7Ad2DfyoqPF46\nSuduZc4hAgMBAAECggEAGXHkKnj8PXuwhYI1+vhOpWraLgiWTFGfu1gueS3HPuCE\n5aA3wDpi7OH+OpIUuZz+cOe7p/iST4WptzKKswd97uRcn9noWphQUf7ucoUaBXoL\n3reucxoMqnMTLSsVtfg+iXx1CwfNB8sMHHxvFdlIzg5yAgUUdKxTinYyiqUMWiLv\no6tndM+RjO6BfhpnbRpfHsYKlFwbf7AaGCJ9FXgcajtr6VcON/pP0KKQDHGRi6n5\nDuQGGDAIgbiYhjBbsB/lmu0xmOdlmzPOpZ7ev8Ulyz7dbfsfd9RG4NzHpih3MKhq\n0FoVeJMXfBLh4EAYaiBCEe1i8yf5mlrgnqIvFmWufQKBgQD3HpWmi+P7rxPEedeD\nI+AmcITgPiod/jOOs90nJMW/te3cZzZMLTgu6rr7dIS8V5qzHlexpFszyP7Eh90y\nMaS+vyyRlSAKTUyv+Z6Ccoqc0ixIAbr7YusT9yk2qXkD7mhQOIRP1KtVYO/oJzD4\nyTKv0e2JmCzzQY7daq9wVvXT9QKBgQDVB4JdxIV5PA6sym8nepVCf+ELDKqoAKP1\ntFZPrP1OSjC4J8LLLcIFVn4QkfvBsC7pt8UM/cyN9+0aahe8BzZ8ZP4Nf6piBZ00\nnkslI/xp0m/66aAjI+5SOjhqt5E/aJRzvJ4TgAAHB5LbduEtcxIKn95bVikYgWqi\nF5UpBOXh/QKBgAbSOE1FlUBwP7pvpow/JEPLXU+XR7BWQPQScOtQr4iwK+Wmj7Ag\nm2loH0srlzJftKx3DPKhV8chKC8ilO96wVJmkoNeO2ktYw2EdWSiZsMXZhOCwLeJ\nrnV5oBCbMvTx0r1MIhLWCvirWVPuKQLlAtopkEX5BlyclaX0+Oy/6b81AoGAfpuV\n6XCw+xqshhlR8p6yMvGZqF2A15R53b+uRHBFo9AIIIrRBLxPQajkB6kbfUPevd0Q\naeY1OnMNIdPIA2IuCcRkEVW8x8Eaa3lgo9Q9Yg9FqlRLblcefxRHD3XGB296O0bw\nlBpQ6dygdXqz3bU0Fchp+NK+XegcnfVyGwzkK2kCgYBXp4pyeVW5N7NxM8ZZhvaB\n0qceyE2jC6l7d0jlYysAOJQIE+X8ozDAnyjGrdZLIfK1+m3k0e6y8cqlIhfjSu9V\nIJqwgeBpeCNbbCvmAJ70bgpdrHbM4UcHd8nM5grJPtyzPzfgw+n10sG2qaL5vc6A\nwR7r26aoGLuoXWL6/a0oKA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "frontendcontent@moneymanzalog.iam.gserviceaccount.com",
+  "client_id": "109604041570549981472",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/frontendcontent%40moneymanzalog.iam.gserviceaccount.com"
+}

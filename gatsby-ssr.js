@@ -1,16 +1,7 @@
-const React = require('react');
+/**
+ * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
+ *
+ * See: https://www.gatsbyjs.org/docs/ssr-apis/
+ */
 
-const HeadComponents = [
-  <script
-    id="CookieConsent"
-    src="https://policy.app.cookieinformation.com/uc.js"
-    data-culture="RU"
-    key="cookieConsentScript"
-    type="text/javascript"
-    crossOrigin="anonymous"
-  />,
-];
-
-exports.onRenderBody = ({ setHeadComponents }) => {
-  setHeadComponents(HeadComponents);
-};
+// You can delete this file if you're not using it

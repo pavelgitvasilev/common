@@ -1,0 +1,45 @@
+[
+    {
+        "name": "jenkins-khan/jenkins-api",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/jenkins-khan/jenkins-php-api.git",
+            "reference": "21c09ff6a661b2e060daa1168edc20a2b80c23fb"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/jenkins-khan/jenkins-php-api/zipball/21c09ff6a661b2e060daa1168edc20a2b80c23fb",
+            "reference": "21c09ff6a661b2e060daa1168edc20a2b80c23fb",
+            "shasum": ""
+        },
+        "require-dev": {
+            "atoum/atoum": "2.0.1"
+        },
+        "time": "2017-10-21T08:47:16+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "JenkinsKhan\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "jenkins-khan",
+                "homepage": "https://github.com/jenkins-khan/jenkins-php-api"
+            }
+        ],
+        "description": "Jenkins PHP API",
+        "homepage": "https://github.com/jenkins-khan/jenkins-php-api",
+        "keywords": [
+            "api",
+            "jenkins"
+        ]
+    }
+]

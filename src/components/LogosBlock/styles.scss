@@ -1,0 +1,16 @@
+.logos {
+  background-color: #0e2355;
+  padding: 42px 0;
+  @media (max-width: 767px) {
+    padding: 38px 0;
+  }
+
+  .logos_img {
+    display: block;
+    margin: 0 auto;
+    height: 50px;
+    @media (max-width: 767px) {
+      margin: 12px auto;
+    }
+  }
+}

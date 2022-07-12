@@ -1,14 +1,26 @@
-import * as React from "react"
+import React from 'react';
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../assets/index.css';
 
-const NotFoundPage = () => (
-  <Layout>
-    <Seo title="404: Not found" />
-    <h1>404: Not Found</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </Layout>
-)
+import { HelmetBlock } from '../components/HelmetBlock';
+import { Header } from '../components/HeaderBlock';
 
-export default NotFoundPage
+const NotFoundPage = () => {
+    const seoData = {
+        title: '404',
+        databaseId: null,
+        seo: {
+            title: 'Page not found - Plazo',
+        },
+    };
+
+    return (
+        <>
+            <HelmetBlock data={seoData} />
+            <Header />
+        </>
+    );
+};
+
+export default NotFoundPage;

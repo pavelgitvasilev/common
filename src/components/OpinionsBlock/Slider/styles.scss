@@ -1,0 +1,73 @@
+/*--- Only Safari ≥ 9 ---*/
+@mixin only_safari9($selector, $map){
+  @supports (overflow:-webkit-marquee) and (justify-content:inherit){
+    #{$selector} {
+      @each $property, $value in ($map) {
+        #{$property}: $value;
+      }
+    }
+  }
+}
+/*--- Only iOS Safari ≥ 9 ---*/
+@mixin only_ios($selector, $map){
+  @supports (-webkit-text-size-adjust:none) and (not (-ms-accelerator:true)) and (not (-moz-appearance:none)){
+    #{$selector} {
+      @each $property, $value in ($map) {
+        #{$property}: $value;
+      }
+    }
+  }
+}
+/*--- Only Safari ≥ 9 (Non iOS) ---*/
+@mixin only_safari_no_ios($selector, $map){
+  _:-webkit-full-screen:not(:root:root),#{$selector} {
+    @each $property, $value in ($map) {
+      #{$property}: $value;
+    }
+  }
+}
+/*--- Only Firefox ≥ 30 ---*/
+@mixin only_ff30_above($selector, $map){
+  @supports (-moz-appearance:meterbar) and (background-blend-mode:difference,normal){
+    #{$selector} {
+      @each $property, $value in ($map) {
+        #{$property}: $value;
+      }
+    }
+  }
+}
+
+.slick-track{
+  display: flex;
+  @media (max-width: 767px) {
+    margin-left: -42px;
+  }
+  .slick-slide{
+    height: auto;
+    @media (max-width: 767px) {
+      display: flex;
+      align-items: center; //optional
+      justify-content: center; //optional
+      flex-direction: column;
+    }
+      & > div {
+      height: 100%;
+    }
+  }
+}
+.opinions_item {
+  height: 100%;
+}
+
+@include only_safari9( '.slick-track', (
+        margin-left: 0,
+))
+@include only_ios( '.slick-track', (
+        margin-left: 0,
+))
+@include only_safari_no_ios( '.slick-track', (
+        margin-left: 0,
+))
+@include only_ff30_above( '.slick-track', (
+        margin-left: 0,
+))

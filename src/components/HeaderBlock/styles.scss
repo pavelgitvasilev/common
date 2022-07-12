@@ -1,0 +1,130 @@
+.header {
+  box-sizing: border-box;
+  box-shadow: 0 0 17px 0 #0e23553b;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background: #fff;
+  height: 124px;
+  @media (max-width: 767px) {
+    height: 64px;
+  }
+  .openheader & {
+    height: 100%;
+    overflow: auto;
+    transition: none;
+  }
+  &.header_glue {
+    position: absolute;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  .logo {
+    display: block;
+    position: relative;
+    top: -12px;
+    height: auto;
+    max-width: 76px;
+    padding: 0;
+    line-height: 4;
+    float: left;
+
+    & > img,
+    & > svg {
+      width: 100%;
+    }
+  }
+
+  .header_info {
+    position: relative;
+    top: 5px;
+    margin-right: 20px;
+    margin-top: -5px;
+    @media (max-width: 1199px) {
+      display: none;
+    }
+
+    &-phone, &-time {
+      display: block;
+      font-size: 14px;
+      line-height: 1.43;
+      letter-spacing: 0.6px;
+      color: #0e2355;
+    }
+
+    &-phone {
+      display: inline !important;
+      font-size: 16px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    &_mobile {
+      & > .header_info-phone {
+        font-size: 14px;
+        display: block !important;
+        text-align: right;
+        line-height: 8px;
+      }
+
+      & > .header_info-time {
+        font-size: 12px;
+      }
+    }
+  }
+  .navbar-toggle {
+    display: none;
+    position: absolute;
+    right: 16px;
+    top: 14px;
+    border: none;
+    width: 42px;
+    height: 42px;
+    margin-top: 0;
+    background-color: transparent;
+    @media (max-width: 767px) {
+      display: block;
+    }
+
+    .page-with-banner.openheader & {
+      top: 93px;
+    }
+
+    & .icon-bar {
+      display: block;
+      position: relative;
+      background-color:#0e2355;
+      width: 24px;
+      height: 2px;
+      transition: transform ease .3s;
+
+      &:first-child {
+        bottom: 4px;
+      }
+
+      &:last-child {
+        top: 4px;
+
+        .openheader & {
+          display: none;
+        }
+      }
+    }
+
+    &.navbar-toggle_active {
+      & span:nth-child(1) {
+        transform: rotate(45deg);
+        position: absolute;
+        top: 16px;
+      }
+
+      & span:nth-child(2) {
+        transform: rotate(-45deg);
+        position: absolute;
+        top: 16px;
+      }
+    }
+  }
+}

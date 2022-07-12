@@ -1,0 +1,35 @@
+.hiw_block {
+  padding: 100px 0 50px;
+  @media (max-width: 767px) {
+    padding: 70px 0 15px;
+  }
+
+  .hiw_block_item {
+    padding: 48px 0;
+    @media (max-width: 767px) {
+      padding: 26px 15px;
+    }
+
+    .hiw_block_item_int {
+      font-family: SabonNextLTPro;
+      font-weight: 700;
+      font-size: 110px;
+      color: rgba(248, 151, 33, 0.2);
+      position: absolute;
+      top: 44px;
+      left: 50%;
+      transform: translateX(-50%);
+      @media (max-width: 767px) {
+        top: 22px;
+      }
+    }
+
+    .hiw_block_item_title {
+      margin: 8px 0 4px;
+    }
+
+    .hiw_block_item_description {
+      padding: 12px 24px;
+    }
+  }
+}
