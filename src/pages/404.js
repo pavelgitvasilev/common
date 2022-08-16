@@ -1,17 +1,17 @@
 import React from 'react';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../assets/index.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+import 'assets/css/typography.css';
 
-import { HelmetBlock } from '../components/HelmetBlock';
-import { Header } from '../components/HeaderBlock';
+import { HelmetBlock } from 'components/Helmet';
+import { Header } from 'components/Header';
 
 const NotFoundPage = () => {
     const seoData = {
         title: '404',
         databaseId: null,
         seo: {
-            title: 'Page not found - Plazo',
+            title: 'Page not found - Status-leasing',
         },
     };
 

@@ -1,39 +1,36 @@
-import React, { useEffect } from 'react';
+// libraries
+import React, { Fragment } from 'react';
 import { graphql } from 'gatsby';
-import { SETTINGS } from '../settings';
-import { checkAvailability } from '../helpers/checkAvailability';
+import 'normalize.css';
+// components
+import Layout from 'components/layout';
+import { GlobalStyle } from 'components/UI/GlobalStyle';
+import { GlobalGridVars } from 'components/UI/Grid';
+// helpers
+import { renderBlock } from 'helpers/renderBlock';
+// static
+import 'assets/css/typography.css';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../assets/index.css';
-
-import { HelmetBlock } from '../components/HelmetBlock';
-import { setCookiesFromUrlParams } from '../helpers/setCookies';
-import { Header } from '../components/HeaderBlock';
-import { renderBlock } from '../helpers/renderBlock';
-import { Footer } from '../components/FooterBlock';
-
-const Page = ({ data }) => {
-    const components = data.wpPage.components.components;
-    const pageID = data.wpPage.databaseId;
-    const regPages = SETTINGS.REG_PAGES;
-
-    const HEADER = checkAvailability(regPages, pageID) ? null : <Header />;
-    const FOOTER = checkAvailability(regPages, pageID) ? null : <Footer />;
-
-    useEffect(() => {
-        //set get parameters to cookies
-        setCookiesFromUrlParams();
-    });
-
+const Page = ({
+    data: {
+        wpPage: { title, seo, template, isFrontPage, components },
+    },
+}) => {
     return (
         <>
-            <HelmetBlock data={data.wpPage} />
-            {HEADER}
-            {components &&
-                components.map((item, index) =>
-                    item ? <section key={item.__typename + '_' + index}>{renderBlock(item)}</section> : null
-                )}
-            {FOOTER}
+            {/* <HelmetBlock data={data.wpPage} /> */}
+            <GlobalStyle />
+            <GlobalGridVars />
+            <Layout
+                isFrontPage={isFrontPage}
+                // scrollHeaderValue={1036}
+                template={template.templateName}
+            >
+                {components.components &&
+                    components.components.map((item, index) => (
+                        <Fragment key={item.__typename + '_' + index}>{renderBlock(item)}</Fragment>
+                    ))}
+            </Layout>
         </>
     );
 };
@@ -53,40 +50,6 @@ export const pageQuery = graphql`
             }
             template {
                 templateName
-            }
-            components {
-                components {
-                    ... on WpPage_Components_Components_Banner {
-                        __typename
-                    }
-                    ... on WpPage_Components_Components_Logos {
-                        __typename
-                    }
-                    ... on WpPage_Components_Components_Advantages {
-                        __typename
-                    }
-                    ... on WpPage_Components_Components_Opinions {
-                        __typename
-                    }
-                    ... on WpPage_Components_Components_Hiw {
-                        __typename
-                    }
-                    ... on WpPage_Components_Components_Getloan {
-                        __typename
-                    }
-                    ... on WpPage_Components_Components_Title {
-                        __typename
-                        ...TitleBlock
-                    }
-                    ... on WpPage_Components_Components_Content {
-                        __typename
-                        ...ContentBlock
-                    }
-                    ... on WpPage_Components_Components_Quiz {
-                        __typename
-                        ...Steps
-                    }
-                }
             }
         }
     }

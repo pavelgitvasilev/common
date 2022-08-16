@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: "SabonNextLTPro";
     src: url("fonts/SabonNextLTPro/Display/SabonNextLTPro-Display.woff2") format("woff2"),
     url("fonts/SabonNextLTPro/Display/SabonNextLTPro-Display.woff") format("woff");
@@ -375,6 +375,6 @@ ul.arrow-list > li:before {
 
 .ie .yellow-btn {
     padding: 18px 34px 16px
-}
+} */
 
 /*# sourceMappingURL=style.bundle.css.map*/

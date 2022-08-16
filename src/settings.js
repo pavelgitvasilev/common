@@ -1,8 +1,8 @@
 export const SETTINGS = {
-    URL_MASTER: 'https://qa-delivery-solva-mx-master.moneyman.ru/wp',
+    // URL_MASTER: 'full URL',
     WP_PREFIX: '/wp',
     MAIN_PAGE_ID: 18,
-    REG_PAGES: [285, 291, 293, 295],
+    // REG_PAGES: [285, 291, 293, 295], array page id
 };
 
 export const API = {
