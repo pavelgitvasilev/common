@@ -32,6 +32,11 @@ module.exports = {
                         password: 'statusadmin',
                     },
                 },
+                schema: {
+                    perPage: 100,
+                    requestConcurrency: 1,
+                    previewRequestConcurrency: 1,
+                },
             },
         },
         `gatsby-plugin-image`,

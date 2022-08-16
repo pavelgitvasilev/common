@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 import { useFooterOptionsQuery } from 'hooks/useFooterOptionsQuery';
 
 import { useViewport } from 'hooks/useViewport';
-import { BREAKPOINT, Col, Row } from 'components/UI/Grid';
+import { BREAKPOINT, Col, Container, Row } from 'components/UI/Grid';
 import Text from 'components/UI/Text';
 import { COLORS } from 'components/UI/Theme';
 
