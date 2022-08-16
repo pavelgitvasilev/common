@@ -1,6 +1,6 @@
 ---
 deployment:
   tasks:
-    - export REPOPATH=/home/yourdoma/repo/*
-    - export SITEPATH=/home/yourdoma/public_html/
+    - export REPOPATH=https://github.com/pavelgitvasilev/common/*
+    - export SITEPATH=https://github.com/pavelgitvasilev/common/public
     - /bin/rsync -rav --exclude '.git' --exclude '.cpanel.yml' --del $REPOPATH $SITEPATH
