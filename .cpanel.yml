@@ -2,5 +2,5 @@
 deployment:
   tasks:
     - export REPOPATH=https://github.com/pavelgitvasilev/common/wp/*
-    - export SITEPATH=home/master.host160820221440.of.by/public_html/
+    - export SITEPATH=home/master.host160820221440.of.by/wp/
     - /bin/rsync -rav --exclude '.git' --exclude '.cpanel.yml' --del $REPOPATH $SITEPATH
