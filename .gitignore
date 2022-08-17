@@ -66,6 +66,7 @@ typings/
 # gatsby files
 .cache/
 public
+public/~partytown
 
 # Mac files
 .DS_Store

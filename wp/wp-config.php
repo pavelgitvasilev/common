@@ -5,11 +5,9 @@ $scheme = 'https';
 
 $db_password = 'statusadmin';
 $db_user = 'status';
-if ($_SERVER['HTTP_HOST'] === 'status.local') {
+if ($_SERVER['HTTP_HOST'] === 'status.local' || $_SERVER['HTTP_HOST'] === 'master.host160820221440.of.by') {
     $_SERVER['HTTPS'] = '';
     $scheme = 'http';
-    $db_password = 'statusadmin';
-    $db_user = 'status';
 }
 
 // ** Параметры базы данных: Эту информацию можно получить у вашего хостинг-провайдера ** //
